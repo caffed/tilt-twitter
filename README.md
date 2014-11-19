@@ -24,6 +24,10 @@
 - Make sure the `dancer` script is in you $PATH
 	- for brew it is: `/usr/local/Cellar/perl/{{ VERSION }}/bin/`
 
+## Add Twitter Key and Secret
+- Add you consumer key and secret to the `environments/development.yml` and `environments/production.yml`
+  - See [https://dev.twitter.com/oauth/application-only](https://dev.twitter.com/oauth/application-only) for more info.
+
 ## Run project
 	$ ./bin/app.pl
 
