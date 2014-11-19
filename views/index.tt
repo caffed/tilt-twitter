@@ -1,0 +1,35 @@
+<div ng-controller="HomeCtrl as home">
+  <h1>{{ message }}</h1>
+
+  <div class="box">
+    <h2>Recent tweets:</h2>
+    <input ng-model="user" placeholder="Enter screen name of user..." size="40"></input>
+    <button><a ng-click="getTweets(user)">Update</a></button>
+    <h3>Results:</h3>
+    <ul>
+      <li class="tweet" ng-repeat="tweet in home.latest">
+        <div class="user-thumb left"><img src="{{tweet.user.profile_image_url}}"></div>
+        <div class="right">{{ tweet.text }}</div>
+      </li>
+    </ul>
+  </div>
+
+  <br><br>
+
+  <div class="box">
+    <h2>Two user followers intersection:</h2>
+    Note:<br>
+    <strong><small>This is limited to the first 5000 of each user.<br>
+    API rate limiting cannot guarantee retrieval of users with more followers.</small></strong><br><br>
+
+    <input ng-model="user_one" placeholder="Enter screen name of first user..." size="40"></input>
+    <input ng-model="user_two" placeholder="Enter screen name of second user..." size="40"></input>
+    <button><a ng-click="getIntersection(user_one, user_two)">Update</a></button>
+    <h3>Results:</h3>
+    <ul>
+      <li ng-repeat="user in home.intersection">{{ user }}</li>
+    </ul>
+  </div>
+
+</div>
+

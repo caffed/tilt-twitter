@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="TiltTwitter">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=<% settings.charset %>" />
+    <title>Tilt::Twitter</title>
+    <link rel="stylesheet" href="<% request.uri_base %>/css/app.css" />
+    <script src="<% request.uri_base %>/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="<% request.uri_base %>/vendor/angular/angular.min.js"></script>
+    <script src="<% request.uri_base %>/vendor/angular-route/angular-route.min.js"></script>
+    <script src="<% request.uri_base %>/vendor/angular-resource/angular-resource.min.js"></script>
+    <script src="<% request.uri_base %>/vendor/angular-bootstrap/ui-bootstrap.min.js"></script>
+  </head>
+  <body>
+    <% content %>
+    <script src="<% request.uri_base %>/javascripts/services/twitter.js"></script>
+    <script src="<% request.uri_base %>/javascripts/home.js"></script>
+    <script src="<% request.uri_base %>/javascripts/app.js"></script>
+  </body>
+</html>

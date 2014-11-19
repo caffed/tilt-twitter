@@ -1,0 +1,47 @@
+@font-face{
+  font-family:'Dited';
+  src: url('/fonts/dited.otf');
+}
+
+body {
+  background-color: #f6f6f6;
+  font-family: Courier;
+}
+
+h1, h2, h3, h4 {
+  font-family: Dited, sans-serif;
+}
+
+div.box {
+  padding: 0 10px;
+  background-color: white;
+  border: 3px solid #eee;
+}
+ul {
+  padding-left: 0;
+}
+.tweet {
+  clear: both;
+  margin-bottom: 6px;
+  height: 48px;
+}
+
+li {
+  list-style: none;
+}
+
+.tweet .text {
+  padding-top: 6px;
+  height: 48px;
+}
+
+.user-thumb {
+  width: 48px;
+  margin-right: 10px;
+}
+
+.left {
+  display: inline;
+  float: left;
+}
+

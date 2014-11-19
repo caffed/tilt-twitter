@@ -1,0 +1,17 @@
+{
+  "name": "tilt_twitter",
+  "description": "demo app",
+  "version": "0.0.1",
+  "homepage": "http://yokai.me/tilt/twitter",
+  "main": "index.html",
+  "author": "Carlo Mogavero <carlo@caffed.net>",
+  "ignore": [],
+  "devDependencies": {},
+  "dependencies": {
+    "angular": "1.3.2",
+    "angular-route": "1.3.2",
+    "angular-resource":"1.3.2",
+    "angular-bootstrap": "0.11.2",
+    "bootstrap-sass-official":"3.3.1"
+  }
+}
